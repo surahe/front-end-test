@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "unit": "karma start"
+    "unit": "karma start",
+    "e2e": "node tests/e2e/baidu.spec.js",
+    "e2e:rize": "node tests/e2e/git.spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,9 @@
     "karma-babel-preprocessor": "^8.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.2",
-    "karma-jasmine": "^2.0.1"
+    "karma-jasmine": "^2.0.1",
+    "puppeteer": "^1.16.0",
+    "rize": "^0.8.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }
