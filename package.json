@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "unit": "karma start",
+    "unit:react": "react-scripts test --env=jsdom",
     "e2e": "node tests/e2e/baidu.spec.js",
     "e2e:rize": "node tests/e2e/git.spec.js"
   },
@@ -15,13 +16,21 @@
     "@babel/core": "^7.4.5",
     "@babel/plugin-transform-modules-umd": "^7.2.0",
     "jasmine-core": "^3.4.0",
+    "jest": "^24.7.1",
+    "jest-dom": "^3.3.0",
     "karma": "^4.1.0",
     "karma-babel-preprocessor": "^8.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.2",
     "karma-jasmine": "^2.0.1",
     "puppeteer": "^1.16.0",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1",
+    "react-testing-library": "^7.0.1",
     "rize": "^0.8.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
   }
 }
