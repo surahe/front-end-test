@@ -1,0 +1,4 @@
+{
+  "plugins": ["@babel/plugin-transform-modules-umd"],
+  "auxiliaryCommentBefore": "istanbul ignore next"
+}
