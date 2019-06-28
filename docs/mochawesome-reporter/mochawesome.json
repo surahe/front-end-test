@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2019-06-28T04:21:07.496Z",
-    "end": "2019-06-28T04:21:07.537Z",
-    "duration": 41,
+    "start": "2019-06-28T07:56:14.606Z",
+    "end": "2019-06-28T07:56:14.646Z",
+    "duration": 40,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "8702536a-e1ed-444c-817e-be1b043bf620",
+    "uuid": "24717c8d-278e-4b65-a9a0-534d1e28989d",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "370df7d8-07e9-40e8-9f56-45feb0606219",
+        "uuid": "b6018889-66a9-408c-acaa-8975159d0c64",
         "title": "node接口",
         "fullFile": "H:\\Sura\\front-end-test\\tests\\service\\router.spec.js",
         "file": "\\tests\\service\\router.spec.js",
@@ -37,14 +37,14 @@
             "title": "\"before all\" hook: must be on home page",
             "fullTitle": "node接口 \"before all\" hook: must be on home page",
             "timedOut": false,
-            "duration": 30,
+            "duration": 28,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "requestProxy.get('/')\n  .expect(200, done)",
             "err": {},
             "isRoot": false,
-            "uuid": "326af252-f0dc-47eb-8702-bd66b97eb895",
+            "uuid": "a7fffbc7-5102-4b95-a09a-8113ecd01fdc",
             "isHook": true,
             "skipped": false
           }
@@ -64,14 +64,14 @@
             "code": "requestProxy.get('/')\n  .expect('Content-Type', /json/)\n  .expect(200)\n  .end(function (err, res) {\n    if(err) return done(err)\n    if(res.body.data === 'hello world') {\n      done()\n    } else {\n      done(new Error('接口数据异常'))\n    }\n  })",
             "err": {},
             "isRoot": false,
-            "uuid": "aa1a72a5-d942-4a8b-9c42-57f9f3f37b63",
+            "uuid": "112575f4-75fe-4cff-950e-f1c804a1c9ab",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "aa1a72a5-d942-4a8b-9c42-57f9f3f37b63"
+          "112575f4-75fe-4cff-950e-f1c804a1c9ab"
         ],
         "failures": [],
         "pending": [],
