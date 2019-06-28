@@ -8,7 +8,12 @@ const mocha = new Mocha({
 })
 
 mocha.addFile('./tests/service/router.spec.js');
-mocha.run(function () {
-  console.log("done");
-  process.exit();
+mocha.run(function (errlorLength) {
+  if (errlorLength > 0) {
+    console.log("error");
+    process.exit(1);
+  } else {
+    console.log("done");
+    process.exit();
+  }
 })

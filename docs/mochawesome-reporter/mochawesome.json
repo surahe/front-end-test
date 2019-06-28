@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2019-05-24T04:00:48.401Z",
-    "end": "2019-05-24T04:00:48.591Z",
-    "duration": 190,
+    "start": "2019-06-28T04:21:07.496Z",
+    "end": "2019-06-28T04:21:07.537Z",
+    "duration": 41,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "4d0d7c07-27bb-4bd8-9995-8163ebb36818",
+    "uuid": "8702536a-e1ed-444c-817e-be1b043bf620",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,39 +28,55 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "958c6c4b-54b4-4419-b2b5-efb2f446dd72",
+        "uuid": "370df7d8-07e9-40e8-9f56-45feb0606219",
         "title": "node接口",
-        "fullFile": "G:\\Sura\\front-end-test\\tests\\service\\router.spec.js",
+        "fullFile": "H:\\Sura\\front-end-test\\tests\\service\\router.spec.js",
         "file": "\\tests\\service\\router.spec.js",
-        "beforeHooks": [],
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: must be on home page",
+            "fullTitle": "node接口 \"before all\" hook: must be on home page",
+            "timedOut": false,
+            "duration": 30,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "requestProxy.get('/')\n  .expect(200, done)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "326af252-f0dc-47eb-8702-bd66b97eb895",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
         "afterHooks": [],
         "tests": [
           {
             "title": "test接口测试",
             "fullTitle": "node接口 test接口测试",
             "timedOut": false,
-            "duration": 135,
+            "duration": 3,
             "state": "passed",
-            "speed": "slow",
+            "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "axios.get(\"http://ts.21cn.com/front/api/includePage/getMateriel.do\")\n  .then(function (response) {\n    if (response.data.errorCode == 1) {\n      done();\n    } else {\n      done(new Error(\"数据请求出错\"))\n    }\n  }).catch(function (error) {\n    done(error);\n  })",
+            "code": "requestProxy.get('/')\n  .expect('Content-Type', /json/)\n  .expect(200)\n  .end(function (err, res) {\n    if(err) return done(err)\n    if(res.body.data === 'hello world') {\n      done()\n    } else {\n      done(new Error('接口数据异常'))\n    }\n  })",
             "err": {},
             "isRoot": false,
-            "uuid": "20d0a7bf-b432-4891-bb7c-0c3d3ea4aa78",
+            "uuid": "aa1a72a5-d942-4a8b-9c42-57f9f3f37b63",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "20d0a7bf-b432-4891-bb7c-0c3d3ea4aa78"
+          "aa1a72a5-d942-4a8b-9c42-57f9f3f37b63"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 135,
+        "duration": 3,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000

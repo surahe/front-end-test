@@ -30,10 +30,12 @@
     "react-scripts": "^3.0.1",
     "react-testing-library": "^7.0.1",
     "rize": "^0.8.0",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "koa": "^2.7.0",
     "react": "^16.8.6"
   }
 }
