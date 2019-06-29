@@ -6,7 +6,7 @@ echo '将当前web目录备份'
 tar -zcvf /data/bak/yd-test/$(date +"%Y%m%d_%H%M%S").tar.gz /www/yd-test --exclude node_modules
 
 echo '将jenkins传输的文件放到目录'
-cp -r /data/jenkins/yd-test /www/
+/bin/cp -r /data/jenkins/yd-test /www/
 
 echo '进入 /www/yd-test'
 cd /www/yd-test
