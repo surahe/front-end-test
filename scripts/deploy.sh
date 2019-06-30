@@ -1,5 +1,4 @@
 now_time=$(date +"%Y%m%d_%H%M%S")
-
 echo '停止 PM2 yd-test'
 pm2 stop yd-test
 
