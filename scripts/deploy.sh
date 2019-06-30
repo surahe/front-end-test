@@ -1,10 +1,10 @@
 now_time=$(date +"%Y%m%d_%H%M%S")
 
-echo '停止 PM22 yd-test'
+echo '停止 PM2 yd-test'
 pm2 stop yd-test
 
 echo '将当前web目录备份'
-tar -zcvf /data/bak/yd-test/$(date +"%Y%m%d_%H%M%S").tar.gz /www/jenkins/yd-test
+tar -zcvf /data/bak/yd-test/$(date +"%Y%m%d_%H%M%S").tar.gz /www/jenkins/yd-test --exclude node_modules
 
 echo '将jenkins传输的文件放到目录'
 mv /data/jenkins/yd-test /www/jenkins/yd-test
